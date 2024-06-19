@@ -1,0 +1,18 @@
+class RewardValue{
+    double cashvalue;
+    double milesvalue;
+    RewardValue(double cash){
+        cashvalue=cash;
+    }
+    RewardValue(int miles){
+        milesvalue=miles;
+    }
+    double getCashValue(){
+        cashvalue=cashvalue*0.0035;
+        return cashvalue;
+    }
+    double getMilesValue(){
+        milesvalue=cashvalue*milesvalue;
+        return milesvalue;
+    }
+}
